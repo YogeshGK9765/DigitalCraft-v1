@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 – Page Not Found | DigitalCraft</title>
+  <meta name="description" content="Page not found. The page you're looking for doesn't exist or has been moved." />
+  <meta name="robots" content="noindex, follow" />
+  <meta name="theme-color" content="#0c0c0c" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="shortcut icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/favicon.svg" />
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--clr-primary:#6366f1;--clr-primary-hover:#4f46e5;--clr-primary-glow:rgba(99,102,241,0.25);--clr-bg:#0c0c0c;--clr-surface:#141414;--clr-border:#2a2a2a;--clr-text:#ffffff;--clr-text-muted:#a0a0a0;--clr-text-dim:#666666;--font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;--max-width:1200px;--radius:12px;--radius-sm:8px;--transition:0.3s cubic-bezier(0.4,0,0.2,1)}
+    html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+    body{font-family:var(--font-family);background:var(--clr-bg);color:var(--clr-text);line-height:1.6;overflow-x:hidden;display:flex;flex-direction:column;min-height:100vh}
+    a{text-decoration:none;color:inherit}
+
+    .header{
+      position:fixed;top:0;left:0;width:100%;height:72px;z-index:1000;
+      background:rgba(12,12,12,.85);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+      border-bottom:1px solid rgba(255,255,255,.05)
+    }
+    .header .container{max-width:var(--max-width);margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:100%}
+    .logo{display:flex;align-items:center;gap:10px;font-size:1.35rem;font-weight:700;letter-spacing:-.5px}
+    .logo img{width:36px;height:36px}
+    .logo span{background:linear-gradient(135deg,#fff 60%,var(--clr-primary));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+
+    .error-page{flex:1;display:flex;align-items:center;justify-content:center;padding:120px 20px 60px;text-align:center}
+    .error-code{font-size:clamp(6rem,15vw,12rem);font-weight:900;line-height:1;letter-spacing:-4px;background:linear-gradient(135deg,var(--clr-primary),#a78bfa,#6366f1);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:8px}
+    .error-subtitle{font-size:clamp(1rem,2vw,1.2rem);color:var(--clr-text-muted);margin-bottom:4px;letter-spacing:4px;text-transform:uppercase;font-weight:600}
+    .error-title{font-size:clamp(1.5rem,3vw,2rem);font-weight:700;margin-bottom:16px}
+    .error-desc{font-size:1rem;color:var(--clr-text-muted);max-width:480px;margin:0 auto 40px;line-height:1.7}
+    .error-actions{display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 32px;border-radius:8px;font-family:var(--font-family);font-size:.95rem;font-weight:600;cursor:pointer;border:none;transition:var(--transition)}
+    .btn-primary{background:var(--clr-primary);color:#fff}
+    .btn-primary:hover{background:var(--clr-primary-hover);box-shadow:0 0 30px var(--clr-primary-glow);transform:translateY(-2px)}
+    .btn-outline{background:transparent;color:var(--clr-text);border:1.5px solid var(--clr-border)}
+    .btn-outline:hover{border-color:var(--clr-primary);color:var(--clr-primary);transform:translateY(-2px)}
+
+    .error-illustration{margin-bottom:40px}
+    .error-illustration svg{width:clamp(120px,20vw,200px);height:clamp(120px,20vw,200px);opacity:.15}
+
+    .error-help{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:600px;margin:48px auto 0}
+    .error-help a{padding:16px;border-radius:12px;border:1px solid var(--clr-border);text-align:center;transition:var(--transition);font-size:.85rem;color:var(--clr-text-muted)}
+    .error-help a:hover{border-color:var(--clr-primary);color:var(--clr-primary);transform:translateY(-2px)}
+
+    .footer{padding:24px 20px;border-top:1px solid var(--clr-border);text-align:center}
+    .footer p{font-size:.8rem;color:var(--clr-text-dim)}
+
+    @media(max-width:768px){.error-help{grid-template-columns:1fr}}
+    @media(max-width:480px){.error-actions{flex-direction:column}.error-actions .btn{width:100%}}
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="/" class="logo" aria-label="DigitalCraft Home">
+        <img src="assets/logo.svg" alt="DigitalCraft Logo" width="36" height="36" />
+        <span>DigitalCraft</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="error-page">
+    <div>
+      <div class="error-illustration">
+        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="50" cy="40" r="18"/>
+          <path d="M20 85 Q50 65 80 85"/>
+          <rect x="44" y="55" width="12" height="25" rx="3"/>
+          <circle cx="50" cy="40" r="5" fill="currentColor" opacity=".2"/>
+          <line x1="72" y1="28" x2="85" y2="15" stroke-width="2" stroke-linecap="round"/>
+          <line x1="85" y1="28" x2="72" y2="15" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="error-subtitle">Error</div>
+      <div class="error-code">404</div>
+      <h1 class="error-title">Page Not Found</h1>
+      <p class="error-desc">The page you're looking for doesn't exist, has been moved, or is temporarily unavailable.</p>
+      <div class="error-actions">
+        <a href="/" class="btn btn-primary">Back to Home</a>
+        <a href="contact/" class="btn btn-outline">Contact Us</a>
+      </div>
+      <div class="error-help">
+        <a href="about/">About</a>
+        <a href="services/">Services</a>
+        <a href="templates/">Templates</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 DigitalCraft by Yogesh G. Kalyankar. All rights reserved.</p>
+  </footer>
+</body>
+</html>
