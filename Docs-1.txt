@@ -1,0 +1,72 @@
+Goal
+- Build a complete DigitalCraft business website and premium marketplace templates for GitHub Pages deployment.
+Constraints & Preferences
+- Dark theme, indigo accent (#6366f1), mobile-first, fully responsive, SEO-friendly, production-ready
+- All CSS inside <style>, all JS inside <script> in the same HTML file — no external files
+- GitHub Pages compatible only — no frameworks, no build tools, no package files
+- Every page must use the same nav, footer, typography, spacing system, and design language
+- Generate one template at a time, never multiple in a single response
+- Templates must be sellable as live demos with WhatsApp purchase CTA and required footer credit to DigitalCraft
+Progress
+Done
+- Created full directory structure under yogeshgk9765.github.io/ with all subdirectories for pages, templates, and assets
+- index.html — Home page with hero, about preview, services grid, template categories, portfolio preview, why choose, reviews, FAQ accordion, CTA, footer
+- about/index.html — Founder Yogesh G. Kalyankar, journey timeline, skills bars, mission/vision, why choose, social links
+- services/index.html — 6 services (Business Websites, Portfolio, Landing Pages, Redesign, SEO, Customization) with features, benefits, process steps, FAQ
+- personal-portfolio/index.html — Portfolio page with stats, 4 featured projects (My Portfolio, Jumbo Online Center, Pramod Online, Pramod Online Multiservices), template categories, technologies, 5-step process, testimonials
+- templates/index.html — 12 category cards (Portfolio, CSC Center, Cyber Cafe, Grocery Shop, Restaurant, Medical Store, Coaching Class, Salon, Electrician, Bakery, Hotel, Travel Agency), features, FAQ
+- contact/index.html — Contact form (name, email, service dropdown, message), 4 info cards, social grid, FAQ
+- faq/index.html — Search bar, 6 category tabs (Services, Pricing, Delivery, Support, Hosting, Customization), 29 accordion questions, contact CTA
+- legal/index.html — Terms of Service, Privacy Policy, Disclaimer, Intellectual Property, Contact sections
+- privacy-policy/index.html — 10 professional privacy policy sections (Introduction through Contact)
+- terms/index.html — 12 professional terms & conditions sections (Acceptance through Contact)
+- 404.html — Custom 404 with illustration, home button, contact button, quick links
+- sitemap.xml — Full sitemap with 22 URLs, priorities, change frequencies
+- robots.txt — Allow all, sitemap reference
+- marketplace/grocery-shop/index.html — FreshCart template with hero/stats, about, 4 categories, 3 featured products, special offers, testimonials, contact form, WhatsApp CTA, map placeholder, demo banner, glassmorphism, green accent
+- marketplace/csc-center/index.html — DigiSeva Kendra template with hero, about, 6 services (Aadhaar, Banking, Bill Payments, Insurance, Government Schemes, Digital Services), 4-step process, testimonials, contact with service dropdown, WhatsApp CTA, demo banner, blue accent
+- SEO improvements: JSON-LD structured data (Organization, WebSite, AboutPage, Service, FAQPage, CollectionPage), canonical URLs, Open Graph + Twitter Card tags, preconnect hints, semantic heading hierarchy, apple touch icons
+- All pages use shared design system: --clr-bg: #0c0c0c, --clr-primary: #6366f1, --font-family: 'Inter'..., responsive breakpoints at 1024px/768px/480px, fade-in animations via IntersectionObserver
+In Progress
+- (none)
+Blocked
+- (none)
+Key Decisions
+- Used personal-portfolio/ path for portfolio page (matches existing nav links) instead of portfolio/
+- Marketplace templates stored under marketplace/ directory to keep them separate from the main site pages
+- Grocery shop uses green (#22c55e) accent as it's appropriate for groceries/freshness
+- CSC center uses blue (#3b82f6) accent to convey trust and government/service authority
+- WhatsApp purchase flow: demo banner + CTA section both link to wa.me/919765663222 with pre-filled template name
+- Footer credit required on all templates: "Template by DigitalCraft — Designed & Developed by Yogesh G. Kalyankar"
+- Template pricing: ₹499 with à la carte customization pricing (extra section ₹100, extra page ₹200, etc.)
+- Both templates include product/service cards, testimonials, contact form, map placeholder, and stats section
+- Removed about-features li::before on .about-features li:hover::before — wait, no, the decision is that templates use .about-features li::before consistently
+Next Steps
+- Generate next marketplace template when user selects from: Cyber Cafe, Restaurant, Portfolio Template, Medical Store, Salon, Coaching Class, Electrician, Bakery, Hotel, Travel Agency
+- Apply any requested design/color/layout changes to existing templates
+- After final approval per template, provide repository name, GitHub Pages URL, marketplace description, tags, and customization pricing
+- Continue building remaining template collection for DigitalCraft's Ready-Made Website Marketplace
+Critical Context
+- All contact/WhatsApp/social details use Yogesh G. Kalyankar's demo values (+91 9765663222, yogeshkalyankar9765@gmail.com) and are marked as easy to replace
+- All paths in templates use relative links (../assets/logo.svg) — must verify correct path depth when deploying to separate repos
+- Template favicons use inline SVG data URIs with business-appropriate colors (green for grocery, blue for CSC)
+- The "Get This Website" button on all templates triggers WhatsApp inquiry with pre-filled message containing template name
+- Custom domain CNAME file exists but points to yogeshgk9765.github.io — separate marketplace repos will need their own CNAME or default GitHub Pages URL
+Relevant Files
+- yogeshgk9765.github.io/index.html: Home page — all major sections, full design system
+- yogeshgk9765.github.io/about/index.html: Founder page — timeline, skills bars, mission/vision
+- yogeshgk9765.github.io/services/index.html: Services page — 6 services with features/benefits
+- yogeshgk9765.github.io/personal-portfolio/index.html: Portfolio page — 4 featured projects, stats
+- yogeshgk9765.github.io/templates/index.html: Template categories overview — 12 categories
+- yogeshgk9765.github.io/contact/index.html: Contact page — form with service dropdown, info cards
+- yogeshgk9765.github.io/faq/index.html: FAQ page — search, 6 category tabs, 29 questions
+- yogeshgk9765.github.io/legal/index.html: Legal page — terms, privacy, disclaimer
+- yogeshgk9765.github.io/privacy-policy/index.html: Privacy policy — 10 professional sections
+- yogeshgk9765.github.io/terms/index.html: Terms & conditions — 12 professional sections
+- yogeshgk9765.github.io/404.html: Custom 404 error page
+- yogeshgk9765.github.io/sitemap.xml: XML sitemap with 22 URLs
+- yogeshgk9765.github.io/robots.txt: Robots config allowing all crawlers
+- yogeshgk9765.github.io/marketplace/grocery-shop/index.html: FreshCart template — grocery store, green accent, ₹499
+- yogeshgk9765.github.io/marketplace/csc-center/index.html: DigiSeva Kendra template — CSC center, blue accent, ₹499
+- yogeshgk9765.github.io/assets/logo.svg: SVG logo used across all main site pages
+- yogeshgk9765.github.io/assets/favicon.svg: SVG favicon used across all main site pages
